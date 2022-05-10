@@ -1,0 +1,9 @@
+import sys
+
+rf = open(sys.argv[1], 'r')
+N = sys.argb[2]
+
+lines = rf.readlines()
+rf.close()
+
+print(lines[:N])

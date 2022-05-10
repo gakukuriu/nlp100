@@ -1,0 +1,9 @@
+s = 'パタトクカシーー'
+temp = ''
+
+for i in range(0, len(s), 2):
+    temp += s[i]
+
+print(temp)
+    
+    

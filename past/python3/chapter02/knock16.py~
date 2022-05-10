@@ -1,0 +1,16 @@
+import sys
+
+rf = open(sys.argv[1], 'r')
+N = int(sys.argv[2])
+wfname = sys.argv[3]
+
+lines = rf.readlines()
+rf.close()
+
+splitlines = [lines[i:i+N] for i in range(0, len(lines), N)]
+for i in range(len(splitlines)):
+    wf = open(wfname+'_'+str(i)+'.txt', 'w')
+    for line in splitlines[i]:
+        wf.write(line)
+    wf.close()
+    

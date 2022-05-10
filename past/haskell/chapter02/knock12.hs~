@@ -1,0 +1,11 @@
+import System.Environment
+import Codec.Binary.UTF8.String
+
+main = do
+  (filePath:(wf1Path:(wf2Path:argList))) <- getArgs
+  contents <- readFile filePath
+  writeFile wf1Path (cutColumn 0 contents)
+  writeFile wf2Path (cutColumn 1 contents)
+  
+
+cutColumn n texts = unlines $ decodeString (map (\lst -> (splitOn "\t" lst) !! n) (lines $ encodeString texts))

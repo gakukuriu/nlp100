@@ -1,0 +1,24 @@
+digraph G {
+		ROOT -> produced
+		produced -> Some
+		machine -> of
+		machine -> the
+		machine -> "earliest-used"
+		Some -> machine
+		machine -> learning
+		learning -> algorithms
+		trees -> such
+		such -> as
+		trees -> decision
+		algorithms -> trees
+		produced -> systems
+		rules -> of
+		rules -> hard
+		rules -> "if-then"
+		systems -> rules
+		rules -> similar
+		rules -> to
+		rules -> existing
+		rules -> "hand-written"
+		similar -> rules
+}

@@ -1,0 +1,20 @@
+digraph G {
+		ROOT -> starts
+		history -> History
+		history -> The
+		starts -> history
+		NLP -> of
+		history -> NLP
+		starts -> generally
+		"1950s" -> in
+		"1950s" -> the
+		starts -> "1950s"
+		found -> although
+		found -> work
+		found -> can
+		found -> be
+		starts -> found
+		periods -> from
+		periods -> earlier
+		found -> periods
+}

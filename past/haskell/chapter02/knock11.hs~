@@ -1,0 +1,7 @@
+import Text.Regex
+import System.Environment
+
+main = do
+  (filePath:argList) <- getArgs
+  contents <- readFile filePath
+  print (subRegex (mkRegex "\t") contents " ")

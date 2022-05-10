@@ -1,0 +1,6 @@
+x = 12
+y = "気温"
+z = 22.4
+
+templateFun x y z = putStrLn ((show x) ++ "時の" ++ y ++ "は" ++ (show z))
+main = templateFun x y z

@@ -1,0 +1,7 @@
+import sys
+
+nf = open(sys.argv[1], 'r')
+
+for line in nf:
+    print(line.replace('\t', ' '))
+    

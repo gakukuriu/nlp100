@@ -1,0 +1,17 @@
+digraph G {
+		ROOT -> based
+		"1980s" -> Up
+		"1980s" -> to
+		"1980s" -> the
+		based -> "1980s"
+		systems -> most
+		systems -> NLP
+		based -> systems
+		based -> were
+		sets -> on
+		sets -> complex
+		based -> sets
+		rules -> of
+		rules -> "hand-written"
+		sets -> rules
+}

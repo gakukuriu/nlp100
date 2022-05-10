@@ -1,0 +1,15 @@
+import sys, json
+import matplotlib.pyplot as plt
+from collections import defaultdict
+
+with open(sys.argv[1], 'r') as rf:
+    neko = json.load(rf)
+    ansDict = defaultdict(int)
+    for sentence in neko:
+        for word in sentence:
+            ansDict[word['surface']] += 1
+    sortList = sorted(my_dict.items(), key = lambda x:x[1], reverse=True)
+    keyList = [i+1 for i in range(len(sortList))]
+    valueList = [v for k, v in sortList.items()]
+    
+

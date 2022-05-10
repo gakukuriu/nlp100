@@ -1,0 +1,7 @@
+import Data.Char
+
+cipherChar :: Char -> Char
+cipherChar c = if isLower c then chr (219 - (ord c)) else c
+
+cipher :: [Char] -> [Char]
+cipher s = map cipherChar s

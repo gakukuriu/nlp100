@@ -1,0 +1,25 @@
+digraph G {
+		ROOT -> difficult
+		difficult -> Generally
+		task -> this
+		difficult -> task
+		difficult -> is
+		difficult -> much
+		difficult -> more
+		learning -> than
+		learning -> supervised
+		difficult -> learning
+		difficult -> and
+		produces -> typically
+		difficult -> produces
+		accurate -> less
+		results -> accurate
+		produces -> results
+		amount -> for
+		amount -> a
+		amount -> given
+		results -> amount
+		data -> of
+		data -> input
+		amount -> data
+}

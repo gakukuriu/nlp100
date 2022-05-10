@@ -1,0 +1,6 @@
+wordExchange :: String -> String
+wordExchange s | length s > 4 = s
+               | otherwise = s
+
+typoglycemia :: String -> String
+typoglycemia = unwords . wordExchange . words

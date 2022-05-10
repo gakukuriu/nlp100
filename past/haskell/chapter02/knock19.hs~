@@ -1,0 +1,6 @@
+import System.Environment
+import Codec.Binary.UTF8.String
+import Data.Map
+
+count_dict [] = empty
+count_dict (x:xs) = insertWithKey

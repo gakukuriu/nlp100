@@ -1,0 +1,7 @@
+import sys, re
+
+rf = open(sys.argv[1], 'r')
+for line in re.findall('\[{2}Category:.*?\]{2}', rf.read()):
+    print(line)
+
+rf.close()

@@ -1,0 +1,10 @@
+import sys
+
+nf = open(sys.argv[1], 'r')
+count = 0
+
+for line in nf:
+    count += 1
+
+nf.close()
+print(count)

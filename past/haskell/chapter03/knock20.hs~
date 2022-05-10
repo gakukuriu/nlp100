@@ -1,0 +1,21 @@
+import System.Environment
+import Codec.Binary.UTF8.String
+import Data.Aeson
+import GHC.Generics
+
+
+data wikiDic = wikiDic {title :: String, text :: String} deriving (Show, Generic)
+instance FromJSON wikiDic
+instance ToJSON wikiDic
+
+main = do
+--  (rfPath:(wfPath:argList)) <- getArgs
+--  contents <- readFile rfPath
+  let json = "{\"title\":\"イギリス\",\"text\":\"すごいっす.com\"}"
+  case decode json :: Maybe Foo of
+    Nothing -> print "Parse Error"
+    Just x -> print x
+
+  
+
+

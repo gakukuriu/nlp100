@@ -1,0 +1,10 @@
+import sys, re
+
+rf = open(sys.argv[1], 'r')
+s = rf.read()
+
+print(re.findall('\{{2}.*\}{2}', s)[:3])
+#for line in re.findall('\{{2}.*', rf.read()):
+#    print(line)
+
+rf.close()

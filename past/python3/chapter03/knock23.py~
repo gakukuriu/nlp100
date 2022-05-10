@@ -1,0 +1,7 @@
+import sys, re
+
+rf = open(sys.argv[1], 'r')
+for line in re.findall('\=+[\w\s]*\=+', rf.read()):
+    print(re.sub('[= ]*', '', line), 'レベル：'+str(len(re.split('\w+', line)[0])-1))
+    
+rf.close()

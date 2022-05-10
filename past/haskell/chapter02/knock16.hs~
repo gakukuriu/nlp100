@@ -1,0 +1,11 @@
+import System.Environment
+import Codec.Binary.UTF8.String
+
+main = do
+  (splitNumber:(rfPath:argList)) <- getArgs
+  contents <- readFile rfPath
+
+splitSentence n [] fileNumber = return ()
+splitSentence n (x:xs) wfName fileNumber = do
+  writeFile (wfName ++ show fileNumber ++ ".txt") (decodeString (unlines $ take n (x:xs)))
+  splitSentence n (drop n (x:xs)) wfName (fileNumber + 1)

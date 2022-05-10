@@ -1,0 +1,14 @@
+digraph G {
+		ROOT -> written
+		time -> During
+		time -> this
+		written -> time
+		chatterbots -> many
+		written -> chatterbots
+		written -> were
+		PARRY -> including
+		written -> PARRY
+		PARRY -> Racter
+		PARRY -> and
+		PARRY -> Jabberwacky
+}

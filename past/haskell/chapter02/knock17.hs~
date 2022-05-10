@@ -1,0 +1,9 @@
+import System.Environment
+import Codec.Binary.UTF8.String
+import Data.List
+
+main = do
+  (rfPath:argList) <- getArgs
+  contents <- readFile rfPath
+  
+
